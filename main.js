@@ -1,3 +1,5 @@
+// Entrega 1
+
 // let hola = alert ("Hola mi nombre es Robot, quisiera saber como esta conformada tu familia. Sin malas intenciones :)");
 
 // let nombreFamiliar = prompt("Ingrese el nombre de su familiar.");
@@ -15,8 +17,12 @@
 
 // let hola = prompt("Hola! contamos con estos destinos, escribe cual quieres visitar: USA - CHILE - NEUQUEN")
 
+// Entrega 2
+
+let aviso = alert("Vamos a buscar tu destino")
 
 //Clase y funcion constructora
+
 class paquetesDeViaje {
     constructor(lugar, precioBase, tiempoDeVuelo) {
         this.lugar = lugar.toUpperCase();
@@ -51,8 +57,6 @@ const verSegundo = paquetes.filter((el) => el.precioBase < 999);
 console.log (verSegundo)
 
 
-
-//let aviso = alert("Vamos a buscar tu destino");
 
 //let iniciarBusqueda = prompt("Tenemos estos destinos disponibles eligue el que más gustes: USA - CHIlE - NEUQUEN. O escriba Terminar para finalizar.");
 
