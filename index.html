@@ -1,13 +1,187 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso JavaScript 48685 - Ezequiel Garcia </title>
+    <link rel="shorcut icon" type="image/x-icon" href="assets/tangente_favicon.ico">
+    <!-- metas -->
+    <title>Estudio TanGente</title>
+    <meta name="description" content="Estudio de diseño gráfico, diseño web, marketing digital, identidad corporativa e ilustración en Buenos Aires, Argentina">
+    <meta name="subject" content="Diseño gráfico en todas sus variantes" />
+    <meta name="copyright" content="Copyright © 2017 estudiotangente.com.ar" />
+    <meta name="dc.creator" content="Estudio Tangente" />
+    <meta name="revisit" content="1 days" />
+    <meta property="og:title" content="Estudio Tangente | Diseño Gráfico" />
+    <meta property="og:type" content="og:website" />
+    <meta property="og:url" content="http://www.estudiotangente.com.ar" />
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.placename" content="Buenos Aires" />
+    <meta name="geo.position" content="-34.587401;-58.428726" />
+    <meta name="ICBM" content="-34.587401, -58.428726" />
+    <meta name="keywords" content="tangente diseño, tangente diseno, tangentediseño, tangentediseno, estudio de diseño, diseño grafico, diseño web, marketing online, animacion, estudio de diseño grafico, estudio de diseño web, estudio de animacion, Buenos Aires, Argentina, Cintia Olave, Belen Santis, Gisela Drezek, Johanna Gonzalez, Fererico Ulicki, Ezequiel Garcia, diseñador, diseño, bienal, diseño grafico, comunicación visual, impresiones, imprenta, packaging, gigantografias, publicidad, agencia, via publica, estampados, ploteos, flyer, flyers, flayer, flayers, volantes, editorial, web, hosting,  diseño, design, impresiones, eventos, promociones, marketing, comunicacion estrategica, digital, marketing digital, imagen corporativa, diseño integral, comunicacion, compañía, pop, point of purchase, multimedia, interactivo, ilustraciones, retoque fotografico, fotografia, comunicacion, agencia de comunicacion, agencias de publicidad, publicidad promocion, master diseño web, diseño editorial, diseño digital, diseño industrial, diseño 3d, trade marketing, imagen corporativa, estudios diseño grafico, master diseño grafico, visual communications, stand, stands, estands, mkt, banner, baner, banners, baners">
+    <!-- fin metas -->
+    <!--stylesheet-->
+    <link rel="stylesheet" href="normalize.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></link>
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <!-- fin stylesheet-->
 </head>
 <body>
-    <h1>Curso JavaScript 48685 - Ezequiel Garcia</h1>
-    <script src="main.js"></script>
+    <!--header-->
+    <header class="pershead">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="assets/tangente_estudio_dise&ntildeo_design_logo_marca_branding.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa-solid fa-bars verde hamb"></i></span>
+                </button>
+                <div class="collapse navbar-collapse container-fluid linea" id="navbarNav">
+                    <ul class="navbar-nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link verde underline text-center" href="pages/quienesomos.html">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link verde underline text-center" href="pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link verde underline text-center" href="pages/portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link verde underline text-center" href="pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>      
+    </header>
+    <!-- fin header-->
+    
+    <!--boton up-->
+    <div class="up">
+        <a href="#"> 
+            <i class="fa-sharp fa-solid fa-lg fa-circle-up beige"></i>
+        </a>
+    </div>
+    <!--fin boton up-->
+
+    <!--hero section-->
+    <section id="inicio" class="container-fluid">
+        <h3 class="blanco center">Somos un equipo de jóvenes profesionales unidos, por una historia en común, para crear, impulsar y revitalizar las necesidades creativas de las organizaciones.</h3>
+        <a href="pages/servicios.html" class="buttons button__green center">Cotizar servicios</a>
+    </section>
+    <!--fin hero section-->
+
+    <!--ultimos trabajos-->
+
+    <section id="ultimos" class="sec container-fluid">
+            <h2 class="verde center">Últimos Trabajos</h2>
+            <article data-aos="zoom-in-down" class="portfolio_grid">
+                <div class="newjob newjobs1"><h6 class="portfolio__text center verde">Marca para Tedec Group</h6></div>
+                <div class="newjob newjobs2"><h6 class="portfolio__text center verde">Presentación para Acapulco</h6></div>
+                <div class="newjob newjobs3"><h6 class="portfolio__text center verde">Feed de Instagram Let It Be</h6></div>
+                <div class="newjob newjobs4"><h6 class="portfolio__text center verde">Piezas para redes Teclab</h6></div>
+                <div class="newjob newjobs5"><h6 class="portfolio__text center verde">Piezas para redes Lavapp</h6></div>
+                <div class="newjob newjobs6"><h6 class="portfolio__text center verde">Presentación para Fundación Pensar</h6></div>
+                <div class="newjob newjobs7"><h6 class="portfolio__text center verde">Presentación para Axxon</h6></div>
+                <div class="newjob newjobs8"><h6 class="portfolio__text center verde">Página web Meta</h6></div>
+                <div class="newjob newjobs9"><h6 class="portfolio__text center verde">Branding MvON Digital</h6></div>
+            </article>
+            <article class="sec flex">
+                <a href="pages/portfolio.html" class="buttons button__green center">Ver más</a>
+            </article>
+    </section>
+</div>
+    <!--fin ultimos trabajos-->
+    
+    <!--final de pag-->
+    <section class="cierre cierre__fondo sec container-fluid">
+        <h2 class="verde center">Contacto</h2>
+        <article class="sec">
+            <div data-aos="zoom-in-down" class="c2">
+                <form action="netlify" method="post" enctype="text/plain" netlify>
+                    <input class="casillas" id="names" name="names" type="text" required placeholder="Nombre">
+                    <input class="casillas" id="email" name="email" type="email" required placeholder="Email">
+                    <textarea class="casillas" id="mensaje" name="mensaje" required placeholder="Escribe aquí"></textarea>
+                    <input type="submit" value="Enviar" class="buttons button__green enviar">
+                </form>
+                <div class="icon_field">
+                    <a href="tel:+5491161895477" target="_blank">
+                        <i class="fa-solid fa-phone fa-lg icon icon__verde wow bounce"></i>
+                        <h6 class="beige">+54 11 6189 5477</h6>
+                    </a>
+                </div>
+                <div class="icon_field">
+                    <a href="mailto:info@estudiotangente.com.ar" target="_blank">
+                        <i class="fa-regular fa-envelope fa-lg icon icon__verde"></i>
+                        <h6 class="beige">info@estudiotangente.com.ar</h6>
+                    </a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-down" class="c2" id="final">
+                <div class="card card__grisC col-12">
+                    <img src="assets/estudio_tangente_design_logo-cliente_appto66x66px.jpg">
+                    <h4 class="beige">Appto</h4>
+                    <h6 class="beige">TanGente es una empresa ágil y resolutiva, para solucionar cualquier problema de diseño, los contactas y enseguida te proponen una solución posible y trabajan a la par de uno con rapidez.</h6>
+                    <h5 class="beige">Juan Manso</h5>
+                </div>            
+                <div class="card card__grisC col-12">
+                    <img src="assets/estudio_tangente_design_logo-cliente_quienvino66x66px.jpg">
+                    <h4 class="beige">QuienVino</h4>
+                    <h6 class="beige">Sólo podemos decir que, a lo largo de los años, hemos estado encantados del servicio brindado. Además de ser unas personas con amplios conocimientos, educados y sobre todo transparentes.</h6>
+                    <h5 class="beige">Roberto Gomez</h5>
+                </div>            
+                <div class="card card__grisC col-12">
+                    <img src="assets/estudio_tangente_design_logo-cliente_orembae66x66px.jpg">
+                    <h4 class="beige">Orembae</h4>
+                    <h6 class="beige">Estudio TanGente me prestó un servicio muy personalizado, satisfaciendo exactamente todas mis expectativas con respecto a armar la página web ideal para mi servicio de viajes.</h6>
+                    <h5 class="beige">Sandra Mianovich</h5>
+                </div>            
+                <div class="card card__grisC col-12">
+                    <img src="assets/estudio_tangente_design_logo-cliente_pw66x66px.jpg">
+                    <h4>Estudio PW</h4>
+                    <h6 class="beige">Hemos trabajado desde el año 2019 y siempre lo hemos encontrado muy profesionales, honestos y eficientes. Esperamos seguir creciendo con ellos en el futuro”</h6>
+                    <h5>Jorge Lira</h5>
+                </div>            
+            </div>
+        </article>   
+    </section>
+    <!--fin final de pag-->
+
+    <!--footer-->
+    <footer>
+        <div class="container-fluid">
+            <img src="assets/tangente_estudio_dise&ntildeo_design_logo_marca_branding_small.png" alt="Estudio TanGente Logo Chico">
+            <div class="social">
+                <a href="https://www.facebook.com/tangentediseno/" target="_blank">
+                    <i class="fa-brands fa-facebook-f icon icon__beige"></i>
+                </a>
+                <a href="https://www.instagram.com/estudio_tangente/" target="_blank">
+                    <i class="fa-brands fa-instagram icon icon__beige"></i>
+                </a>
+                <a href="https://www.behance.net/tangentediseno" target="_blank">
+                    <i class="fa-brands fa-behance icon icon__beige"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/11221636/admin/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in icon icon__beige"></i>
+                </a>
+                <a href="tel:+5491161895477" target="_blank">
+                    <i class="fa-solid fa-phone icon icon__beige"></i>
+                </a>
+            </div>
+        </div>    
+    </footer>
+    <!--fin footer-->
+    
+    <!--scripts-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script>AOS.init();</script>
+    <!--fin scripts-->
 </body>
 </html>

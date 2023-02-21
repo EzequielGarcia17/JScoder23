@@ -1,0 +1,897 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*--Generales--*/
+* {
+  font-family: "Fira Sans", sans-serif;
+  -webkit-margin-before: 0px;
+          margin-block-start: 0px;
+  -webkit-margin-after: 0px;
+          margin-block-end: 0px;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #3c3c3b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23818180' fill-opacity='0.07'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  margin: 0px;
+  padding: 0px;
+}
+
+.centrar {
+  display: inline;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.sec {
+  margin: 0 auto;
+  width: auto;
+  max-width: 1600px;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.flex {
+  display: flex;
+  gap: 40px;
+}
+
+/*--Fin-Generales--*/
+/*--Colores--*/
+.verde {
+  color: #00A18F !important;
+}
+
+.beige {
+  color: #FFF8E1 !important;
+}
+
+.gris {
+  color: #3C3C3B !important;
+}
+
+.violeta {
+  color: #4E3E78 !important;
+}
+
+.blanco {
+  color: #fff !important;
+}
+
+/*--Fin-Colores--*/
+/*--Textos--*/
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 54px !important;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: 20px !important;
+  font-weight: 200 !important;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.grueso {
+  border: solid 3px;
+}
+
+/*--Fin-Textos--*/
+/*--Botones--*/
+.buttons {
+  color: #FFF8E1;
+  min-width: 180px;
+  height: 36px;
+  border-radius: 8px;
+  line-height: 36px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 300ms ease-in-out;
+}
+
+.button__green {
+  background-color: #00A18F;
+  box-shadow: 0px 4px 4px #4E3E78;
+}
+
+.button__violeta {
+  background-color: #4E3E78;
+  box-shadow: 0px 4px 4px #00A18F;
+}
+
+.button__green:hover {
+  scale: 115%;
+  box-shadow: 0px 10px 10px #3C3C3B;
+  transition: 300ms ease-in-out;
+  background-color: #4E3E78;
+  color: #FFF8E1;
+}
+
+.button__violeta:hover {
+  scale: 115%;
+  box-shadow: 0px 4px 4px #4E3E78;
+  transition: 300ms ease-in-out;
+  background-color: #00A18F;
+  color: #FFF8E1;
+}
+
+i {
+  transition: 300ms ease-in-out;
+}
+
+i:hover {
+  transition: 300ms ease-in-out;
+  color: #4E3E78;
+}
+
+/*--Fin-Botones--*/
+/*--header--*/
+.pershead {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 30px 20px 30px;
+  height: auto;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+#navbarNav {
+  justify-content: end;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+}
+
+.underline:hover, .active {
+  -webkit-text-decoration: 3px underline;
+          text-decoration: 3px underline;
+  text-underline-offset: 8px;
+  font-weight: 800;
+}
+
+.linea {
+  border-bottom: 2px solid #00A18F;
+  padding-bottom: 8px;
+}
+
+.hamb {
+  font-size: 30px;
+}
+
+.cabezera {
+  height: 30vh;
+  background-image: url(assets/tangente_estudio_dise&ntildeo_design_banckground_mis1.jpg);
+  background-position: bottom;
+  background-size: cover;
+  box-shadow: 0px 10px 20px #4E3E78;
+  margin-bottom: 100px;
+}
+
+.navbar {
+  max-width: 1600px;
+}
+
+/*--fin header--*/
+/*--footer--*/
+footer {
+  background-color: #00A18F;
+  align-items: center;
+  padding: 16px 16px 16px 16px;
+  box-shadow: 0px -10px 10px #4E3E78;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+}
+footer div img {
+  width: 45px;
+}
+
+.social {
+  gap: 4px;
+  margin-right: 16px;
+}
+.social a {
+  text-decoration: none;
+}
+.social a:hover i {
+  box-shadow: 0px 6px 6px #3C3C3B;
+}
+
+/*--fin-footer--*/
+/*--hero-*/
+#inicio {
+  height: 100vh;
+  background: url(assets/estudio_tangente_design_background_inicio-main.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 100px;
+  background-position: center;
+  z-index: 9;
+  box-shadow: 0px 10px 20px #4E3E78;
+}
+#inicio h3 {
+  width: auto;
+  max-width: 90%;
+  margin-bottom: 16px;
+  background-color: rgba(78, 62, 120, 0.75);
+  padding: 16px;
+  border-radius: 8px;
+  text-shadow: 2px 2px 2px #3C3C3B;
+}
+
+/*--fin-hero-*/
+/*--ultimos-trabajos-*/
+.portfolio_grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(9, 400px);
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.newjob {
+  border-radius: 8px;
+  transition: 100ms ease-in-out;
+  position: relative;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.newjob:hover {
+  transition: 400ms ease-in-out;
+  transform: scale(105%);
+}
+.newjob:hover .portfolio__text {
+  display: block;
+  opacity: 1;
+  transition: 400ms ease-in-out;
+}
+
+.portfolio__text {
+  width: 100%;
+  background-color: #FFF8E1;
+  position: absolute;
+  bottom: 0;
+  line-height: 50px;
+  opacity: 0;
+  transition: 100ms ease-in-out;
+}
+
+.newjobs9 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_9.jpg);
+}
+
+.newjobs8 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_8.jpg);
+}
+
+.newjobs7 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_7.jpg);
+}
+
+.newjobs6 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_6.jpg);
+}
+
+.newjobs5 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_5.jpg);
+}
+
+.newjobs4 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_4.jpg);
+}
+
+.newjobs3 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_3.jpg);
+}
+
+.newjobs2 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_2.jpg);
+}
+
+.newjobs1 {
+  background-image: url(assets/estudio_tangente_design_ultimos-trabajos_1.jpg);
+}
+
+/*--fin-ultimos-trabajos-*/
+/*--iconos-*/
+.icon {
+  font-size: 16px;
+  text-align: center;
+  line-height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px #3C3C3B;
+  margin-left: 4px;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon__verde {
+  background-color: #00A18F;
+  color: #FFF8E1;
+}
+
+.icon__beige {
+  background-color: #FFF8E1;
+  color: #00A18F;
+}
+
+.icon__beige-v {
+  background-color: #FFF8E1;
+  color: #4E3E78;
+}
+
+.icon_field a {
+  text-decoration: none;
+}
+.icon_field a h6 {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*--fin iconos-*/
+/*--final de pag-*/
+.casillas {
+  width: 100%;
+  background-color: #818180;
+  border-radius: 4px;
+  border: solid #00A18F;
+  border-width: 0px 2px 2px 0px;
+  color: #FFF8E1;
+  margin-bottom: 20px;
+  min-height: 48px;
+  padding-left: 10px;
+}
+
+textarea.casillas {
+  min-height: 200px;
+  padding-top: 18px;
+}
+
+.casillas::-moz-placeholder {
+  font-size: 16px;
+  color: #FFF8E1;
+  font-style: italic;
+}
+
+.casillas::placeholder {
+  font-size: 16px;
+  color: #FFF8E1;
+  font-style: italic;
+}
+
+form {
+  display: block;
+  height: auto;
+  margin-bottom: 80px;
+  width: calc(100% - 12px);
+}
+
+.enviar {
+  float: right;
+  margin: 0px;
+  line-height: 22px;
+}
+
+.c2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+#final {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: flex-end;
+  height: 100%;
+  overflow: scroll;
+  gap: 16px;
+  padding-right: 10px;
+}
+
+#final::-webkit-scrollbar {
+  display: none;
+}
+
+.up {
+  font-size: 32px !important;
+  display: inline-block;
+  position: fixed;
+  right: 24px;
+  bottom: 80px;
+  z-index: 8;
+  font-size: 30px;
+  transition: 300ms;
+}
+
+.up:hover {
+  transform: scale(125%);
+  transition: 300ms;
+}
+.up:hover a i {
+  color: #00A18F !important;
+}
+
+.cierre {
+  max-width: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 160px;
+}
+.cierre article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cierre__fondo {
+  background: url(assets/tangente_estudio_dise&ntildeo_design.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/*--fin final de pag-*/
+/*--card--*/
+.card {
+  border-radius: 16px !important;
+  width: 100% !important;
+  max-width: 346px;
+  height: auto;
+  display: grid !important;
+  grid-template-columns: 66px auto;
+  grid-template-rows: 0.4fr 1fr 0.1fr;
+  grid-template-areas: "logoCliente empresa" "comentario comentario" "none nombre";
+  padding: 16px;
+  background-color: #00A18F;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 0px #00A18F;
+  background-color: #818180 !important;
+}
+.card h4 {
+  grid-area: empresa !important;
+  height: auto;
+  color: #FFF8E1;
+  align-self: center;
+  margin-left: 16px;
+}
+.card h5 {
+  grid-area: nombre;
+  height: auto;
+  text-align: right;
+  color: #FFF8E1;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+.card h6 {
+  grid-area: comentario;
+  padding: 0px;
+  margin: 0px;
+  height: auto;
+  font-style: italic;
+}
+.card img {
+  grid-area: logoCliente;
+  background-color: #FFF8E1;
+  border-radius: 50%;
+  width: 66px;
+  height: 66px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+}
+
+/*--fin_card--*/
+/*--quienesomos--*/
+#quienesomos {
+  margin-bottom: 80px;
+  width: 90%;
+}
+#quienesomos h2 {
+  margin-bottom: 60px;
+}
+#quienesomos div img {
+  box-shadow: -16px 16px 0px #00A18F;
+  width: 60%;
+  max-width: 500px;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 0px;
+  margin-left: 32px;
+  margin-top: 16px;
+  float: right;
+}
+
+#textoquienes {
+  margin-right: 32px;
+}
+
+.trio {
+  padding-bottom: 80px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.perfil {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.perfil h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.perfil h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 240px;
+}
+.perfil img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  display: inline-block;
+}
+
+/*--fin quienesomos--*/
+/*--servicios--*/
+#cuadro div div {
+  background-color: #4E3E78;
+  border-radius: 24px;
+  padding: 20px;
+}
+#cuadro div div h3 {
+  margin-bottom: 18px;
+  padding-left: 20px;
+  display: inline;
+  width: 100%;
+}
+
+#otros {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.icon-serv {
+  margin-bottom: 16px;
+}
+.icon-serv i {
+  display: inline-block;
+  margin-left: 4px;
+  font-size: 40px;
+  line-height: 65px;
+  height: 65px;
+  width: 65px;
+}
+.icon-serv h6 {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+#cotizador {
+  display: inline;
+}
+
+.servCotizar {
+  display: none !important;
+}
+
+#cotizador form div h3 {
+  margin-top: 24px;
+}
+
+/*--fin-servicios--*/
+/*--contacto--*/
+#ruleta {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 30px;
+  max-width: 1600px;
+  overflow: scroll;
+  margin-bottom: 48px;
+  margin-top: -160px;
+}
+
+#ruleta::-webkit-scrollbar {
+  display: none;
+}
+
+.corto {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  max-height: 300px;
+  padding: 30px;
+  margin-left: 60px;
+  background-color: #FFF8E1;
+  background-image: url(assets/estudio_tangente_design_lapices_background.jpg);
+  background-size: 40%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px #00A18F;
+}
+
+.noline {
+  text-decoration: none;
+}
+
+#botonesfin {
+  margin-bottom: 80px;
+}
+
+/*--fin-contacto--*/
+/*--portfolio--*/
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.portfolio img {
+  width: calc(50% - 20px);
+  height: auto;
+  margin: 10px;
+}
+
+.filtros {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  flex-basis: content;
+  margin-top: 100px;
+}
+.filtros a i {
+  margin-bottom: 16px;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin-left: 0px;
+}
+.filtros a h4 {
+  transition: 300ms ease-in-out;
+  text-align: center;
+}
+.filtros a:hover i {
+  transform: scale(1.2);
+}
+.filtros a:hover h4 {
+  transform: scale(1.1);
+  transition: 300ms ease-in-out;
+}
+
+.marcadores {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  text-decoration: none;
+  margin-bottom: 24px;
+}
+
+.titulo_port {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #4E3E78;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 20px 10px 20px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+.titulo_port h3 {
+  margin: 0px;
+  margin-left: 20px;
+}
+
+.port_space {
+  padding-top: 60px;
+}
+
+.altu {
+  max-height: 800px;
+}
+
+.carousel-caption {
+  background-color: rgba(60, 60, 59, 0.5);
+  width: 100%;
+  margin: 0 auto;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 32px;
+}
+
+.carousel-inner {
+  border-radius: 16px;
+}
+
+#varios {
+  margin-bottom: 80px;
+}
+
+/*--fin portfolio--*/
+/*--@queries--*/
+@media screen and (min-width: 480px) {
+  .cierre__fondo {
+    background-size: 75%;
+  }
+  .marcadores {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .icon_field i {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .icon_field h6 {
+    margin-left: 0px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .portfolio_grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 400px);
+  }
+  .c2 {
+    width: calc(50% - 32px);
+  }
+  .cierre article {
+    flex-direction: row;
+    gap: 16px;
+  }
+  #final {
+    flex-direction: column;
+    height: 520px;
+  }
+  .cierre__fondo {
+    background-size: 50%;
+  }
+  .icon-serv {
+    width: 33%;
+  }
+  .perfil {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 720px) {
+  #inicio {
+    background: url(assets/estudio_tangente_design_background_inicio-cel.jpg);
+    background-position: 53% 50%;
+  }
+  #botonesfin {
+    flex-direction: column;
+    align-items: center;
+  }
+  #botonesfin a {
+    max-width: 240px;
+  }
+  #contacto {
+    max-height: 300px;
+  }
+  .cierre {
+    margin-right: 0px;
+  }
+  #cuadro div {
+    margin-left: 16px;
+    margin-right: 16px;
+    width: calc(100% - 32px);
+  }
+  .icon_field {
+    margin-left: 0px !important;
+    padding: 0 !important;
+    display: inline-block !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1140px) {
+  #formulariocontacto {
+    width: 100%;
+  }
+  #contacto {
+    max-height: 600px;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 16px;
+  }
+  #otros div {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .marcadores {
+    width: auto;
+  }
+  .portfolio img {
+    width: calc(25% - 20px);
+  }
+}
+/*--fin- @queries--*//*# sourceMappingURL=style.css.map */
