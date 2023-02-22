@@ -591,8 +591,15 @@ form{
         margin-bottom: 10px;
         border-radius: 100%;
         display: inline-block;
+        transition: 300ms ease-in-out;
+    }
+    img.retratoselect, img:hover{
+        padding:20px;
+        border: #00A18F 4px solid;
+        transition: 500ms ease-in-out;
     }
 }
+
 /*--fin quienesomos--*/
 
 /*--servicios--*/
@@ -640,7 +647,7 @@ justify-content: space-between;
 }
 
 .servCotizar{
-    display: none!important;
+    display: none;
 }
 
 #cotizador{

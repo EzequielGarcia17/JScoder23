@@ -23,11 +23,9 @@
     <meta name="keywords" content="tangente diseño, tangente diseno, tangentediseño, tangentediseno, estudio de diseño, diseño grafico, diseño web, marketing online, animacion, estudio de diseño grafico, estudio de diseño web, estudio de animacion, Buenos Aires, Argentina, Cintia Olave, Belen Santis, Gisela Drezek, Johanna Gonzalez, Fererico Ulicki, Ezequiel Garcia, diseñador, diseño, bienal, diseño grafico, comunicación visual, impresiones, imprenta, packaging, gigantografias, publicidad, agencia, via publica, estampados, ploteos, flyer, flyers, flayer, flayers, volantes, editorial, web, hosting,  diseño, design, impresiones, eventos, promociones, marketing, comunicacion estrategica, digital, marketing digital, imagen corporativa, diseño integral, comunicacion, compañía, pop, point of purchase, multimedia, interactivo, ilustraciones, retoque fotografico, fotografia, comunicacion, agencia de comunicacion, agencias de publicidad, publicidad promocion, master diseño web, diseño editorial, diseño digital, diseño industrial, diseño 3d, trade marketing, imagen corporativa, estudios diseño grafico, master diseño grafico, visual communications, stand, stands, estands, mkt, banner, baner, banners, baners">
     <!-- fin metas -->
     <!--stylesheet-->
-    <link rel="stylesheet" href="normalize.css">
-    </link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="crossorigin="anonymous" referrerpolicy="no-referrer">
     </link>
-    <link rel="stylesheet" href="css/animate.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -83,17 +81,17 @@
     <h4 class="blanco center">Seleciona uno de los servicios para cotizar.</h4>
     <section class="sec container-fluid">
         <div class="row trio">
-            <div class="perfil col-md-3">
-                <img class="retrato" src="../assets/estudio_tangente_design_servicios_branding.jpg">
+            <div class="perfil col-md-3" id="abrirBrand">
+                <img class="retrato" id="test" src="../assets/estudio_tangente_design_servicios_branding.jpg">
                 <h4 class="verde center">Branding</h4>
                 <h6 class="beige center">Diseño de identidad institucional para que te destaques de tu competencia.</h6>
             </div>
-            <div class="perfil col-md-3">
+            <div class="perfil col-md-3" id="abrirWeb">
                 <img class="retrato" src="../assets/estudio_tangente_design_servicios_web-design.jpg">
                 <h4 class="verde center">Sitios Web</h4>
                 <h6 class="beige center">Diseño y programación de sitios web modernos y atractivos para todas las plataformas.</h6>
             </div>
-            <div class="perfil col-md-3">
+            <div class="perfil col-md-3" id="abrirMotion">
                 <img class="retrato" src="../assets/estudio_tangente_design_servicios_motion-graphics.jpg">
                 <h4 class="verde center">Motion Graphics</h4>
                 <h6 class="beige center">Diseño de identidad institucional para que te destaques de tu competencia.</h6>
@@ -103,10 +101,10 @@
         <article id="cotizador">
 
             <!--Inicio Formulario-->
-            <form action="netlify" method="post" enctype="text/plain" netlify>
+            <form id="contizarServicio">
 
                 <!--Servicio Branding-->
-                <div id="serBrand">
+                <div id="serBrand" class="servCotizar">
                     <h2 class="verde">Branding</h2>
                     <br>
 
@@ -145,7 +143,7 @@
 
                     <!--Elemento4-->
                     <h3 class="ejemplo blanco"> 4) Link de ejemplo</h3>
-                    <input class="casillas" id="ejemplo" name="cuando" type="number" placeholder="Link de ejemplo">
+                    <input class="casillas" id="ejemplo" name="cuando" type="text" placeholder="Link de ejemplo">
                     <!--Fin-Elemento4-->
                     
                     <!--Cierre-->                    
@@ -156,12 +154,11 @@
                             </div>
                             <div class="col-6 col-sm-4">
                                 <h3 class="blanco">Valor aproximado</h3>
-                                <h2 class="verde">$10000,00</h2>
+                                <h2 id="cotizacionBrand" class="verde">$10000,00</h2>
                                 <h6 class="blanco">Precio estimativo no vinculante</h6>
                             </div>
                         </div>
                     </div>
-                    <hr class="blanco grueso">
                     <!--Fin Cierre--> 
                 </div>
                     
@@ -170,7 +167,8 @@
                 
                 
                 <!--Servicio Web-->
-                <div id="serWeb">
+                
+                <div id="serWeb" class="servCotizar">
                     <h2 class="verde">Diseño Web</h2>
 
                     <!--Elemento1-->
@@ -197,12 +195,12 @@
 
                     <!--Elemento2-->
                     <h3 class="cantidad blanco"> 2) ¿Qué cantidad de subpáginas?</h3>
-                    <input class="casillas" id="cantidad" name="cantidad" type="number" required placeholder="Cantidad">
+                    <input class="casillas" id="cantidad" name="cantidad" type="number" placeholder="Cantidad">
                     <!--Fin-Elemento2-->
 
                     <!--Elemento3-->
                     <h3 class="rubro blanco"> 3) ¿Para que rubro?</h3>
-                    <input class="casillas" id="rubro" name="rubro" type="text" required placeholder="Rubro">
+                    <input class="casillas" id="rubro" name="rubro" type="text" placeholder="Rubro">
                     <!--Fin-Elemento3-->
 
                     <!--Elemento4-->
@@ -226,7 +224,7 @@
 
                     <!--Elemento6-->
                     <h3 class="ejemplo blanco"> 6) Link de ejemplo</h3>
-                    <input class="casillas" id="ejemplo" name="cuando" type="number" placeholder="Link de ejemplo">
+                    <input class="casillas" id="ejemplo" name="cuando" type="text" placeholder="Link de ejemplo">
                     <!--Fin-Elemento6-->
 
                     <!--Cierre-->                    
@@ -242,14 +240,13 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="blanco grueso">
                     <!--Fin Cierre--> 
                 </div>
 
                 <!--Fin Servicio Web-->
 
                 <!--Servicio Motion-->
-                <div id="serMotion">
+                <div id="serMotion" class="servCotizar">
                     <h2 class="verde">Motion Graphics</h2>
 
                     <!--Elemento1-->
@@ -272,7 +269,7 @@
 
                     <!--Elemento2-->
                     <h3 class="cantidad blanco"> 2) ¿Qué cantidad?</h3>
-                    <input class="casillas" id="cantidad" name="cantidad" type="number" required placeholder="Cantidad">
+                    <input class="casillas" id="cantidad" name="cantidad" type="number" placeholder="Cantidad">
                     <!--Fin-Elemento2-->
 
                     <!--Elemento3-->
@@ -309,7 +306,7 @@
                                 <input class="casillas" id="minutos" name="minutos" type="number" placeholder="Minutos">
                             </div>
                             <div class="col-6 col-sm-4">
-                                <input class="casillas" id="minutos" name="minutos" type="number" maxlength="2" required placeholder="Segundos">
+                                <input class="casillas" id="minutos" name="minutos" type="number" maxlength="2" placeholder="Segundos">
                             </div>
                         </div>
                     </div>
@@ -336,7 +333,7 @@
 
                     <!--Elemento7-->
                     <h3 class="ejemplo blanco"> 7) Link de ejemplo</h3>
-                    <input class="casillas" id="ejemplo" name="cuando" type="number" placeholder="Link de ejemplo">
+                    <input class="casillas" id="ejemplo" name="cuando" type="text" placeholder="Link de ejemplo">
                     <!--Fin-Elemento7-->
 
                     <!--Cierre-->                    
@@ -352,23 +349,9 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="blanco grueso">
                     <!--Fin Cierre--> 
                 </div>
                 <!--Fin Servicio Motion-->
-
-                <!--Datos de Contacto-->
-                <h3 class="blanco">Datos de contacto</h3>
-                <input class="casillas" id="names" name="names" type="text" required placeholder="Nombre">
-                <br>
-                <input class="casillas" id="empresa" name="empresa" type="text" placeholder="Empresa">
-                <br>
-                <input class="casillas" id="email" name="email" type="email" required placeholder="Email">
-                <br>
-                <input class="casillas" id="telefono" name="telefono" type="telefono" required placeholder="Teléfono">
-                <br>
-                <input type="submit" value="Enviar" class="buttons button__green enviar">
-                <!--Fin Datos de Contacto-->
             </form>
         </article>
     </section>
@@ -437,8 +420,6 @@
 
     <!--scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="js/wow.min.js"></script>
-    <script> new WOW().init();</script>
     <script>AOS.init();</script>
     <script src="../main.js"></script>
     <!--fin scripts-->

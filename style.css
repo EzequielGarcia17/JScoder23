@@ -602,6 +602,12 @@ form {
   margin-bottom: 10px;
   border-radius: 100%;
   display: inline-block;
+  transition: 300ms ease-in-out;
+}
+.perfil img.retratoselect, .perfil img:hover {
+  padding: 20px;
+  border: #00A18F 4px solid;
+  transition: 500ms ease-in-out;
 }
 
 /*--fin quienesomos--*/
@@ -646,7 +652,7 @@ form {
 }
 
 .servCotizar {
-  display: none !important;
+  display: none;
 }
 
 #cotizador form div h3 {
