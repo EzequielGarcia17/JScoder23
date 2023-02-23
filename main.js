@@ -48,5 +48,6 @@ const serviciosBranding = (servicio, horas) => { localStorage.setItem(servicio, 
 
 serviciosBranding("Lista De Servcios de Branding", JSON.stringify(motivoBrand)); 
 
-// Modificar valor
+// Modificar valor - (Aqui va a dirigir la suma de todos los items)
 const precioBrand = document.getElementById("cotizacionBrand");
+precioBrand.innerHTML="$19900";
